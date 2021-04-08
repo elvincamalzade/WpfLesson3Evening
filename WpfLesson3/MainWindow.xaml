@@ -1,0 +1,380 @@
+﻿<Window x:Class="WpfLesson3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLesson3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--<Grid>
+        --><!--<Button 
+            Width="200" 
+            Height="100"
+            Content="Hello"
+            FontSize="25"
+            FontWeight="ExtraBold"
+            FontFamily="Comic Sans MS"
+            Background="White"
+            BorderBrush="DeepPink"
+            BorderThickness="25,15,5,2"
+                    
+            >
+        </Button>-->
+
+        <!--<Grid  Width="50"  Height="50" Background="DeepSkyBlue" >
+            <CheckBox 
+            Width="50" Height="50"
+            Content="Hello" Foreground="Red" Background="SpringGreen" BorderBrush="DeepPink" >
+            
+        </CheckBox>
+        </Grid>-->
+
+        <!--<Border CornerRadius="50"  Background="LawnGreen"  Width="50"  Height="50" >
+            <CheckBox 
+                IsChecked="True" 
+                Background="LawnGreen"
+                BorderThickness="0" 
+                Width="50"
+                Height="50"
+                Margin="18,18"
+                >
+                
+            </CheckBox>
+        </Border>-->
+
+
+        <!--<StackPanel  Margin="50" >
+            <RadioButton
+                Background="Aqua"
+                Foreground="Red"
+                BorderBrush="SpringGreen"
+                IsChecked="{x:Null}"
+                Content="A"
+                GroupName="A"
+                ></RadioButton>
+
+            <RadioButton
+                GroupName="A"
+                Content="B"
+                Background="Aqua"
+                Foreground="Red"
+                BorderBrush="SpringGreen"
+                IsChecked="{x:Null}"
+                
+                ></RadioButton>
+
+            <RadioButton
+                
+                GroupName="C"
+                Content="C"
+                Background="Aqua"
+                Foreground="Red"
+                BorderBrush="SpringGreen"
+                IsChecked="{x:Null}"
+                
+                ></RadioButton>
+        </StackPanel>--><!--
+
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Button
+                Background="SpringGreen"
+                Name="btn"
+                Click="btn_Click"
+                Content="Number"
+                FontSize="30"
+                     
+                >
+            </Button>
+
+            <RepeatButton 
+                Grid.Column="1"
+                Background="DeepSkyBlue"
+                FontSize="30"
+                Name="btn_repeat"      
+                Click="btn_repeat_Click"
+                Content="Number"
+                >
+                
+            </RepeatButton>
+
+
+
+            <ToggleButton
+                Grid.Column="2"
+                Content="Toggle Button"
+                FontSize="30"
+                Background="Red"
+                Click="ToggleButton_Click"
+                 
+                >
+                
+            </ToggleButton>
+
+
+            <StackPanel Grid.Row="1" >
+                <Label Target="txtbox" >U_sername</Label>
+                <TextBox Name="txtbox" ></TextBox>
+            </StackPanel>
+
+
+            --><!--<Button ToolTip="Hey click me" Grid.Column="1" Grid.Row="1" Height="50"  Width="100" >
+                Hakuna Matata
+                
+            </Button>-->
+
+
+            <!--<Button 
+                Grid.Column="1" 
+                Grid.Row="1" 
+                Height="50"
+                Width="100"
+                ToolTipService.ShowDuration="1000"
+                >
+                <Button.ToolTip>
+                    <ToolTip Placement="Right">
+                        Click me if you can
+                    </ToolTip>
+                </Button.ToolTip>
+              
+            </Button>-->
+
+
+            <!--<Button 
+                Grid.Column="1" 
+                Grid.Row="1" 
+                Height="50"
+                Width="100"
+                ToolTipService.ShowDuration="1000"
+                >
+                <Button.ToolTip>
+                    <StackPanel>
+                        <Label  FontSize="25" FontFamily="Comic Sans MS" > Olalalaaa</Label>
+                        <Image Width="250" Height="250" Source="mario.png"   ></Image>
+                        <Line Stroke="DeepPink"  StrokeThickness="15" X2="250"> </Line>
+                    </StackPanel>
+                </Button.ToolTip>
+
+            </Button>--><!--
+
+
+
+
+            <Frame Name="myframe" Grid.Row="1" Grid.Column="2" Source="https://www.google.com/" ></Frame>
+
+            
+            
+
+
+
+        </Grid>
+        
+        
+
+    </Grid>-->
+    <!--<ScrollViewer>
+        
+
+    <StackPanel>
+
+        <GroupBox
+            Header="Languages"
+            Padding="25"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+            <StackPanel>
+                
+            <CheckBox>I know English</CheckBox>
+            <CheckBox>I know Russion</CheckBox>
+            <CheckBox>I know Azerbaijani</CheckBox>
+            </StackPanel>
+            
+        </GroupBox>
+
+        <GroupBox
+            Header="Languages"
+            Padding="25"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+            <StackPanel>
+
+                <CheckBox>I know English</CheckBox>
+                <CheckBox>I know Russion</CheckBox>
+                <CheckBox>I know Azerbaijani</CheckBox>
+            </StackPanel>
+
+        </GroupBox>
+        <GroupBox
+            Header="Languages"
+            Padding="25"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+            <StackPanel>
+
+                <CheckBox>I know English</CheckBox>
+                <CheckBox>I know Russion</CheckBox>
+                <CheckBox>I know Azerbaijani</CheckBox>
+            </StackPanel>
+
+        </GroupBox>
+        <GroupBox
+            Header="Languages"
+            Padding="25"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+            <StackPanel>
+
+                <CheckBox>I know English</CheckBox>
+                <CheckBox>I know Russion</CheckBox>
+                <CheckBox>I know Azerbaijani</CheckBox>
+            </StackPanel>
+
+        </GroupBox>
+        <GroupBox
+            Header="Languages"
+            Padding="25"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+            <StackPanel>
+
+                <CheckBox>I know English</CheckBox>
+                <CheckBox>I know Russion</CheckBox>
+                <CheckBox>I know Azerbaijani</CheckBox>
+            </StackPanel>
+
+        </GroupBox>
+
+    </StackPanel>
+
+    </ScrollViewer>-->
+
+
+    <!--<ScrollViewer VerticalScrollBarVisibility="Visible">
+
+
+        <StackPanel>
+
+            <Expander
+            Header="Languages"
+            Padding="5"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+                <StackPanel>
+
+                    <CheckBox>I know English</CheckBox>
+                    <CheckBox>I know Russion</CheckBox>
+                    <CheckBox>I know Azerbaijani</CheckBox>
+                </StackPanel>
+
+            </Expander>
+
+            <Expander
+            Header="Languages"
+            Padding="5"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+                <StackPanel>
+
+                    <CheckBox>I know English</CheckBox>
+                    <CheckBox>I know Russion</CheckBox>
+                    <CheckBox>I know Azerbaijani</CheckBox>
+                </StackPanel>
+
+            </Expander>
+            <Expander
+            Header="Languages"
+            Padding="5"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+                <StackPanel>
+
+                    <CheckBox>I know English</CheckBox>
+                    <CheckBox>I know Russion</CheckBox>
+                    <CheckBox>I know Azerbaijani</CheckBox>
+                </StackPanel>
+
+            </Expander>
+            <Expander
+            Header="Languages"
+            Padding="5"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+                <StackPanel>
+
+                    <CheckBox>I know English</CheckBox>
+                    <CheckBox>I know Russion</CheckBox>
+                    <CheckBox>I know Azerbaijani</CheckBox>
+                </StackPanel>
+
+            </Expander>
+            <Expander
+            Header="Languages"
+            Padding="5"
+            Height="150"
+            BorderBrush="DeepPink"
+            BorderThickness="5"
+           
+            >
+                <StackPanel>
+
+                    <CheckBox>I know English</CheckBox>
+                    <CheckBox>I know Russion</CheckBox>
+                    <CheckBox>I know Azerbaijani</CheckBox>
+                </StackPanel>
+
+            </Expander>
+
+        </StackPanel>
+
+    </ScrollViewer>-->
+
+    <StackPanel Width="300">
+        <TextBlock>Username</TextBlock>
+        <TextBox></TextBox>
+        <TextBlock>Password</TextBlock>
+        <TextBox></TextBox>
+    </StackPanel>
+    
+    
+</Window>
